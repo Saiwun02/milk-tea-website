@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai's Milk Tea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2021/08/12/17/37/bubble-tea-6540762_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+    nav {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      color: #ff5e78;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff5e78;
+    }
+
+    header {
+      position: relative;
+      height: 90vh;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-overlay {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px 50px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .hero-overlay h2 {
+      font-size: 3rem;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    .hero-overlay p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 25px;
+    }
+    .hero-btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #ff5e78;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .hero-btn:hover {
+      background-color: #e04a64;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card {
+      background-color: #fff;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-body h3 {
+      margin: 10px 0 5px;
+    }
+    .card-body p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    footer {
+      padding: 20px;
+      background-color: #ffe2ec;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .menu-container { flex-direction: column; align-items: center; }
+      nav { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Sai's</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="hero-overlay">
+      <h2>Sai's Milk Tea</h2>
+      <p>Deliciously brewed just for you 🧋</p>
+      <a href="#menu" class="hero-btn">Order Now</a>
+    </div>
+  </header>
+
+  <section class="section" id="menu">
+    <h2>Our Full Menu</h2>
+
+    <h3>Milk Tea Series</h3>
+    <div class="menu-container">
+      <div class="card"><img src="https://cdn.pixabay.com/photo/2021/08/12/17/37/bubble-tea-6540762_1280.jpg" alt="Classic Milk Tea"><div class="card-body"><h3>Classic Milk Tea</h3><p>₱120<br>Black tea with creamy milk & boba</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.YOUR_ENTRY_ID=Classic+Milk+Tea">Customize
+::contentReference[oaicite:13]{index=13}
+ 
