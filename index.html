@@ -6,76 +6,65 @@
   <title>Sai's Milk Tea</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; scroll-behavior: smooth; }
-
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Nunito', sans-serif;
       background: url('https://img.freepik.com/premium-photo/refreshing-taiwanese-bubble-milk-tea-with-tapioca-pearl-generative-ai_762026-10260.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #222;
+      color: #2b2b2b;
     }
-
     nav {
       background-color: rgba(255, 255, 255, 0.95);
       padding: 15px 30px;
       position: sticky;
       top: 0;
       z-index: 999;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-
     nav h1 {
       font-family: 'Pacifico', cursive;
       font-size: 1.8rem;
       color: #ff5e78;
-      margin: 0;
     }
-
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #444;
+      color: #333;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: 0.3s;
     }
-
     nav a:hover {
       color: #ff5e78;
     }
-
     header {
       height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(4px);
-    }
-
-    .hero-overlay {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 40px 60px;
-      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      backdrop-filter: blur(6px);
+      background-color: rgba(255, 255, 255, 0.5);
     }
-
+    .hero-overlay {
+      background-color: rgba(255,255,255,0.8);
+      padding: 40px;
+      border-radius: 20px;
+    }
     .hero-overlay h2 {
       font-size: 3rem;
-      color: #222;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
-
     .hero-overlay p {
       font-size: 1.2rem;
-      color: #333;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
-
     .hero-btn {
       padding: 12px 30px;
       font-size: 1rem;
@@ -84,24 +73,23 @@
       border: none;
       border-radius: 30px;
       cursor: pointer;
-      transition: 0.3s ease;
       text-decoration: none;
-      display: inline-block;
+      transition: 0.3s;
     }
-
     .hero-btn:hover {
       background-color: #e04a64;
     }
 
     .section {
       padding: 60px 20px;
+      background-color: #fffdfd;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.95);
     }
 
     .section h2 {
       font-size: 2.5rem;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      color: #333;
     }
 
     .menu-container {
@@ -112,49 +100,51 @@
     }
 
     .card {
-      background-color: #fff;
+      background: #fff;
       width: 250px;
       border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       overflow: hidden;
       transition: 0.3s ease;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
     .card img {
       width: 100%;
       height: 160px;
       object-fit: cover;
     }
-
     .card-body {
       padding: 15px;
     }
-
     .card-body h3 {
       margin: 10px 0 5px;
-      font-weight: bold;
-      color: #222;
+      color: #ff5e78;
     }
-
     .card-body p {
       font-size: 0.95rem;
-      color: #666;
+      color: #555;
     }
 
-    footer {
-      padding: 20px;
-      background-color: #ffe2ec;
-      text-align: center;
-      font-size: 0.9rem;
+    .menu-btn {
+      background-color: #ff5e78;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .menu-btn:hover {
+      background-color: #e04a64;
     }
 
     @media (max-width: 768px) {
-      .menu-container { flex-direction: column; align-items: center; }
-      nav { flex-direction: column; gap: 10px; }
+      .menu-container {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -165,6 +155,8 @@
   <div>
     <a href="#home">Home</a>
     <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -178,192 +170,176 @@
 
 <section class="section" id="menu">
   <h2>Our Full Menu</h2>
+
+<section class="section" id="menu">
+  <h2>Our Full Menu</h2>
   <h3>Milk Tea Series</h3>
   <div class="menu-container">
 
     <div class="card">
-      <img src="https://img.freepik.com/premium-photo/taro-milk-tea-with-pearls-generative-ai_900396-38473.jpg" alt="Classic Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2021/08/12/17/37/bubble-tea-6540762_1280.jpg" alt="Classic Milk Tea">
       <div class="card-body">
         <h3>Classic Milk Tea</h3>
         <p>₱120<br>Black tea with creamy milk & boba</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Classic+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Classic+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/free-photo/tasty-milk-tea-with-boba-wooden-board_23-2149300024.jpg" alt="Okinawa Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2022/05/13/14/44/tea-7193686_1280.jpg" alt="Okinawa Milk Tea">
       <div class="card-body">
         <h3>Okinawa Milk Tea</h3>
         <p>₱130<br>Roasted brown sugar flavor</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Okinawa+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Okinawa+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/free-photo/high-angle-bubble-tea-cup_23-2149895916.jpg" alt="Taro Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2021/08/20/08/22/bubble-tea-6559512_1280.jpg" alt="Taro Milk Tea">
       <div class="card-body">
         <h3>Taro Milk Tea</h3>
         <p>₱130<br>Nutty, violet, and smooth taro flavor</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Taro+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Taro+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/premium-photo/refreshing-taiwanese-bubble-milk-tea-with-wintermelon_900396-38465.jpg" alt="Wintermelon Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2023/06/22/12/43/milk-tea-8082672_1280.jpg" alt="Wintermelon Milk Tea">
       <div class="card-body">
         <h3>Wintermelon Milk Tea</h3>
         <p>₱130<br>Sweet and nutty with wintermelon</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Wintermelon+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Wintermelon+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/free-photo/thai-milk-tea-with-ice-cup_23-2149264995.jpg" alt="Thai Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2023/02/05/11/58/boba-7767805_1280.jpg" alt="Thai Milk Tea">
       <div class="card-body">
         <h3>Thai Milk Tea</h3>
         <p>₱130<br>Spiced Thai tea with milk</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Thai+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Thai+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/free-photo/hokkaido-milk-tea-with-ice_23-2149264996.jpg" alt="Hokkaido Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2020/06/27/08/58/bubble-tea-5345374_1280.jpg" alt="Hokkaido Milk Tea">
       <div class="card-body">
         <h3>Hokkaido Milk Tea</h3>
         <p>₱140<br>Creamy with caramel notes</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Hokkaido+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Hokkaido+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/premium-photo/brown-sugar-milk-tea-drink-with-pearl-tapioca_900396-38461.jpg" alt="Brown Sugar Boba">
+      <img src="https://cdn.pixabay.com/photo/2021/03/26/16/59/bubble-tea-6127640_1280.jpg" alt="Brown Sugar Boba">
       <div class="card-body">
         <h3>Brown Sugar Boba</h3>
         <p>₱140<br>Caramelized brown sugar and pearls</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Brown+Sugar+Boba">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Brown+Sugar+Boba">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/premium-photo/matcha-latte-with-boba-milk-foam_900396-38462.jpg" alt="Matcha Latte">
+      <img src="https://cdn.pixabay.com/photo/2020/09/04/07/14/matcha-5543276_1280.jpg" alt="Matcha Latte">
       <div class="card-body">
         <h3>Matcha Latte</h3>
         <p>₱135<br>Japanese matcha with fresh milk</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Matcha+Latte">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Matcha+Latte">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/premium-photo/strawberry-milk-tea-glass_900396-38470.jpg" alt="Strawberry Milk Tea">
+      <img src="https://cdn.pixabay.com/photo/2023/01/28/20/03/bubble-tea-7750812_1280.jpg" alt="Strawberry Milk Tea">
       <div class="card-body">
         <h3>Strawberry Milk Tea</h3>
         <p>₱135<br>Fruity and creamy strawberry milk tea</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Strawberry+Milk+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Strawberry+Milk+Tea">Customize</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://img.freepik.com/premium-photo/green-mango-tea-drink-glass_900396-38474.jpg" alt="Mango Green Tea">
+      <img src="https://cdn.pixabay.com/photo/2022/05/16/03/32/bubble-tea-7199977_1280.jpg" alt="Mango Green Tea">
       <div class="card-body">
         <h3>Mango Green Tea</h3>
         <p>₱130<br>Crisp green tea with sweet mango</p>
-        <a class="hero-btn" target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Mango+Green+Tea">Customize</a>
+        <a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform?usp=pp_url&entry.1852570444=Mango+Green+Tea">Customize</a>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- Customization Options -->
 <section class="section" id="customization">
   <h2>Customize Your Drink</h2>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/formResponse" method="POST" target="_blank">
-    
-    <div class="menu-container">
-      <div class="card">
-        <div class="card-body">
-          <h3>Sugar Level</h3>
-          <p>
-            <label><input type="radio" name="entry.839387911" value="0%"> 0%</label><br>
-            <label><input type="radio" name="entry.839387911" value="25%"> 25%</label><br>
-            <label><input type="radio" name="entry.839387911" value="50%"> 50%</label><br>
-            <label><input type="radio" name="entry.839387911" value="75%"> 75%</label><br>
-            <label><input type="radio" name="entry.839387911" value="100%"> 100%</label>
-          </p>
-        </div>
-      </div>
+  <div class="menu-container">
 
-      <div class="card">
-        <div class="card-body">
-          <h3>Ice Level</h3>
-          <p>
-            <label><input type="radio" name="entry.1121996510" value="No Ice"> No Ice</label><br>
-            <label><input type="radio" name="entry.1121996510" value="Less Ice"> Less Ice</label><br>
-            <label><input type="radio" name="entry.1121996510" value="Regular Ice"> Regular Ice</label><br>
-            <label><input type="radio" name="entry.1121996510" value="Extra Ice"> Extra Ice</label>
-          </p>
-        </div>
-      </div>
+    <div class="card-body">
+      <h3>Sugar Level</h3>
+      <p>Choose how sweet you'd like it:</p>
+      <ul>
+        <li>0%</li>
+        <li>25%</li>
+        <li>50%</li>
+        <li>75%</li>
+        <li>100%</li>
+      </ul>
 
-      <div class="card">
-        <div class="card-body">
-          <h3>Size</h3>
-          <p>
-            <label><input type="radio" name="entry.1981381763" value="Regular"> Regular</label><br>
-            <label><input type="radio" name="entry.1981381763" value="Large"> Large</label>
-          </p>
-        </div>
-      </div>
+      <h3>Ice Level</h3>
+      <p>Pick how much ice you want:</p>
+      <ul>
+        <li>No Ice</li>
+        <li>Less Ice</li>
+        <li>Regular Ice</li>
+        <li>Extra Ice</li>
+      </ul>
 
-      <div class="card">
-        <div class="card-body">
-          <h3>Toppings</h3>
-          <p>
-            <label><input type="checkbox" name="entry.1999732703" value="Black Pearl (Boba)"> Black Pearl (Boba)</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Crystal Boba"> Crystal Boba</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Brown Sugar Boba"> Brown Sugar Boba</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Coconut Jelly"> Coconut Jelly</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Grass Jelly"> Grass Jelly</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Pudding"> Pudding</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Cheese Foam"> Cheese Foam</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Aloe Vera"> Aloe Vera</label><br>
-            <label><input type="checkbox" name="entry.1999732703" value="Red Bean"> Red Bean</label>
-          </p>
-        </div>
-      </div>
+      <h3>Size</h3>
+      <p>Available sizes:</p>
+      <ul>
+        <li>Regular</li>
+        <li>Large</li>
+      </ul>
+
+      <h3>Toppings</h3>
+      <p>Add your favorites:</p>
+      <ul>
+        <li>Black Pearl (Boba)</li>
+        <li>Crystal Boba</li>
+        <li>Brown Sugar Boba</li>
+        <li>Grass Jelly</li>
+        <li>Pudding</li>
+        <li>Aloe Vera</li>
+        <li>Cheese Foam</li>
+        <li>Red Bean</li>
+      </ul>
     </div>
 
-    <br>
-    <button class="hero-btn" type="submit">Submit Order</button>
-  </form>
+  </div>
 </section>
 
+<!-- About Us Section -->
 <section class="section" id="about">
   <h2>About Sai's Milk Tea</h2>
-  <p style="max-width: 700px; margin: auto;">
-    At Sai’s Milk Tea, we believe in more than just drinks—we believe in moments. Brewed with love and the finest ingredients,
-    our drinks bring comfort, joy, and flavor to your day. Whether you’re grabbing your go-to or trying something new, we’re
-    here to make every sip a little sweeter.
-  </p>
+  <p>Founded with a passion for flavor and freshness, Sai's Milk Tea brings cozy café vibes and quality drinks to your neighborhood. From creamy classics to fruit teas and fun toppings, we’ve got a perfect cup for every mood.</p>
 </section>
 
+<!-- Contact Section -->
 <section class="section" id="contact">
-  <h2>Visit Us</h2>
-  <p>We're located at Brgy. Caroline Masibay, Las Piñas City</p>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27989063156!2d-74.25986584119653!3d40.69767006414356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f2f7812b9ab9a78!2sHappy+Town+Milk+Tea!5e0!3m2!1sen!2sph!4v1683929142857!5m2!1sen!2sph"
-    width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+  <h2>Contact Us</h2>
+  <p>📍 Visit us at: 123 Bubble Ave, Tea City, PH</p>
+  <p>📞 Call: 0912-345-6789</p>
+  <p>📧 Email: hello@saismktea.com</p>
+
+  <div style="margin-top: 20px">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.264697193934!2d121.04320347489624!3d14.533337278517334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c98eacb3a1df%3A0x54c379e0cb79921e!2sMilk%20Tea%20Shop!5e0!3m2!1sen!2sph!4v1713976531404"
+      width="100%" height="300" style="border:0;" allowfullscreen=""
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </section>
 
+<!-- Footer -->
 <footer>
   &copy; 2025 Sai's Milk Tea. All rights reserved. | Follow us @saismktea
 </footer>
