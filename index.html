@@ -6,44 +6,13 @@
   <title>Sai's Milk Tea</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Nunito', sans-serif;
       background-color: #fff;
       color: #333;
     }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 10%;
-      left: 5%;
-      width: 25px;
-      height: 25px;
-      background-color: #3e2723;
-      border-radius: 50%;
-      opacity: 0.1;
-      z-index: -1;
-    }
-
-    body::after {
-      content: "";
-      position: fixed;
-      bottom: 10%;
-      right: 10%;
-      width: 20px;
-      height: 20px;
-      background-color: #4e342e;
-      border-radius: 50%;
-      opacity: 0.1;
-      z-index: -1;
-    }
-
     nav {
       background-color: #fff;
       padding: 15px 30px;
@@ -55,14 +24,12 @@
       justify-content: space-between;
       align-items: center;
     }
-
     nav h1 {
       font-family: 'Pacifico', cursive;
       font-size: 1.8rem;
       color: #ff5e78;
       margin: 0;
     }
-
     nav a {
       margin-left: 20px;
       text-decoration: none;
@@ -70,15 +37,12 @@
       font-weight: bold;
       transition: color 0.3s;
     }
-
     nav a:hover {
       color: #ff5e78;
     }
-
     header {
       height: 100vh;
-      background-image: url('https://www.transparenttextures.com/patterns/cream-dust.png'), linear-gradient(to right, #fff6f0, #ffece6);
-      background-size: auto, cover;
+      background: linear-gradient(to right, #ffe0ec, #fff5e6);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -86,17 +50,14 @@
       text-align: center;
       padding: 20px;
     }
-
     header h2 {
       font-size: 3rem;
       margin-bottom: 10px;
     }
-
     header p {
       font-size: 1.2rem;
       margin-bottom: 20px;
     }
-
     .hero-btn {
       padding: 12px 30px;
       font-size: 1rem;
@@ -107,28 +68,23 @@
       cursor: pointer;
       transition: 0.3s ease;
     }
-
     .hero-btn:hover {
       background-color: #e04a64;
     }
-
     .section {
       padding: 60px 20px;
       text-align: center;
     }
-
     .section h2 {
       font-size: 2.5rem;
       margin-bottom: 40px;
     }
-
     .menu-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
     }
-
     .card {
       background-color: #fff;
       width: 250px;
@@ -137,67 +93,33 @@
       overflow: hidden;
       transition: 0.3s ease;
     }
-
     .card:hover {
       transform: translateY(-5px);
     }
-
     .card img {
       width: 100%;
       height: 160px;
       object-fit: cover;
     }
-
     .card-body {
       padding: 15px;
     }
-
     .card-body h3 {
       margin: 10px 0 5px;
     }
-
     .card-body p {
       font-size: 0.95rem;
       color: #666;
     }
-
-    .insta-section {
-      background: #fef0f5;
-      padding: 60px 20px;
-    }
-
-    .insta-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .insta-grid img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
     footer {
       padding: 20px;
       background-color: #ffe2ec;
       text-align: center;
       font-size: 0.9rem;
     }
-
     @media (max-width: 768px) {
-      .menu-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
+      .menu-container { flex-direction: column; align-items: center; }
+      nav { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
@@ -208,7 +130,6 @@
     <div>
       <a href="#home">Home</a>
       <a href="#menu">Menu</a>
-      <a href="#insta">Gallery</a>
     </div>
   </nav>
 
@@ -222,7 +143,7 @@
     <h2>Our Bestsellers</h2>
     <div class="menu-container">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1587740896339-5a7b22be8c73?auto=format&fit=crop&w=400&q=80" alt="Classic Milk Tea">
+        <img src="https://cdn.pixabay.com/photo/2021/08/12/17/37/bubble-tea-6540762_1280.jpg" alt="Classic Milk Tea">
         <div class="card-body">
           <h3>Classic Milk Tea</h3>
           <p>Black tea with creamy milk & boba</p>
@@ -230,7 +151,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1612197591963-5c9b7ccfb535?auto=format&fit=crop&w=400&q=80" alt="Taro Milk Tea">
+        <img src="https://cdn.pixabay.com/photo/2021/06/23/15/50/boba-6359285_1280.jpg" alt="Taro Milk Tea">
         <div class="card-body">
           <h3>Taro Milk Tea</h3>
           <p>Nutty, violet and smooth taro flavor</p>
@@ -238,7 +159,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1586281380349-632531db7edb?auto=format&fit=crop&w=400&q=80" alt="Brown Sugar Boba">
+        <img src="https://cdn.pixabay.com/photo/2022/11/01/17/53/bubble-tea-7561511_1280.jpg" alt="Brown Sugar Boba">
         <div class="card-body">
           <h3>Brown Sugar Boba</h3>
           <p>Caramelized brown sugar and pearls</p>
@@ -246,23 +167,13 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1622495897563-1d176bd4e47f?auto=format&fit=crop&w=400&q=80" alt="Matcha Latte">
+        <img src="https://cdn.pixabay.com/photo/2023/02/05/11/58/boba-7767805_1280.jpg" alt="Matcha Latte">
         <div class="card-body">
           <h3>Matcha Latte</h3>
           <p>Japanese matcha with fresh milk</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="insta-section" id="insta">
-    <h2>Follow Us on Instagram</h2>
-   <div class="insta-grid">
-  <img src="https://cdn.pixabay.com/photo/2021/08/12/17/37/bubble-tea-6540762_1280.jpg
-  <img src="https://cdn.pixabay.com/photo/2021/06/23/15/50/boba-6359285_1280.jpg
-  <img src="https://cdn.pixabay.com/photo/2022/11/01/17/53/bubble-tea-7561511_1280.jpg
-  <img src="https://cdn.pixabay.com/photo/2023/02/05/11/58/boba-7767805_1280.jpg
-</div>
   </section>
 
   <footer>
