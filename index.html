@@ -6,10 +6,7 @@
   <title>Sai's Milk Tea</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Nunito', sans-serif;
@@ -40,9 +37,7 @@
       font-weight: bold;
       transition: color 0.3s;
     }
-    nav a:hover {
-      color: #ff5e78;
-    }
+    nav a:hover { color: #ff5e78; }
 
     header {
       position: relative;
@@ -81,9 +76,8 @@
       text-decoration: none;
       display: inline-block;
     }
-    .hero-btn:hover {
-      background-color: #e04a64;
-    }
+    .hero-btn:hover { background-color: #e04a64; }
+
     .section {
       padding: 60px 20px;
       text-align: center;
@@ -106,20 +100,14 @@
       overflow: hidden;
       transition: 0.3s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
+    .card:hover { transform: translateY(-5px); }
     .card img {
       width: 100%;
       height: 160px;
       object-fit: cover;
     }
-    .card-body {
-      padding: 15px;
-    }
-    .card-body h3 {
-      margin: 10px 0 5px;
-    }
+    .card-body { padding: 15px; }
+    .card-body h3 { margin: 10px 0 5px; }
     .card-body p {
       font-size: 0.95rem;
       color: #666;
@@ -138,51 +126,51 @@
 </head>
 <body>
 
-  <nav>
-    <h1>Sai's</h1>
-    <div>
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-    </div>
-  </nav>
+<nav>
+  <h1>Sai's</h1>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+  </div>
+</nav>
 
-  <header id="home">
-    <div class="hero-overlay">
-      <h2>Sai's Milk Tea</h2>
-      <p>Deliciously brewed just for you 🧋</p>
-      <a href="#menu" class="hero-btn">Order Now</a>
-    </div>
-  </header>
+<header id="home">
+  <div class="hero-overlay">
+    <h2>Sai's Milk Tea</h2>
+    <p>Deliciously brewed just for you 🧋</p>
+    <a href="#menu" class="hero-btn">Order Now</a>
+  </div>
+</header>
 
-  <section class="section" id="menu">
-    <h2>Our Full Menu</h2>
+<section class="section" id="menu">
+  <h2>Our Full Menu</h2>
 
-    <h3>Milk Tea Series</h3>
-    <div class="menu-container">
-      <div class="card"><img src="https://source.unsplash.com/featured/?milktea" alt="Classic Milk Tea"><div class="card-body"><h3>Classic Milk Tea</h3><p>₱120<br>Black tea with creamy milk & boba</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform">Order Now</a></div></div>
-      <div class="card"><img src="https://source.unsplash.com/featured/?taro" alt="Taro Milk Tea"><div class="card-body"><h3>Taro Milk Tea</h3><p>₱130<br>Nutty, violet, and smooth taro flavor</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform">Order Now</a></div></div>
-      <div class="card"><img src="https://source.unsplash.com/featured/?matcha" alt="Matcha Latte"><div class="card-body"><h3>Matcha Latte</h3><p>₱135<br>Japanese matcha with fresh milk</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform">Order Now</a></div></div>
-    </div>
+  <h3>Milk Tea Series</h3>
+  <div class="menu-container">
+    <div class="card"><img src="https://images.unsplash.com/photo-1601315481371-95df5e159f60?auto=format&fit=crop&w=800&q=80" alt="Classic Milk Tea"><div class="card-body"><h3>Classic Milk Tea</h3><p>₱120<br>Black tea with creamy milk & boba</p><a class="hero-btn" target="_blank" href="https://forms.gle/3Dorderform">Order Now</a></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1611974789855-9c8b6c1fd094?auto=format&fit=crop&w=800&q=80" alt="Taro Milk Tea"><div class="card-body"><h3>Taro Milk Tea</h3><p>₱130<br>Nutty, violet, and smooth taro flavor</p><a class="hero-btn" target="_blank" href="https://forms.gle/3Dorderform">Order Now</a></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1603052875515-6245f6e04b4e?auto=format&fit=crop&w=800&q=80" alt="Brown Sugar Boba"><div class="card-body"><h3>Brown Sugar Boba</h3><p>₱140<br>Caramelized brown sugar and pearls</p><a class="hero-btn" target="_blank" href="https://forms.gle/3Dorderform">Order Now</a></div></div>
+  </div>
 
-    <h3>Fruit Tea Series</h3>
-    <div class="menu-container">
-      <div class="card"><img src="https://source.unsplash.com/featured/?mangotea" alt="Mango Fruit Tea"><div class="card-body"><h3>Mango Fruit Tea</h3><p>₱125<br>Refreshing mango-infused tea</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform">Order Now</a></div></div>
-    </div>
+  <h3>Fruit Tea Series</h3>
+  <div class="menu-container">
+    <div class="card"><img src="https://images.unsplash.com/photo-1560889910-19b47d3fca18?auto=format&fit=crop&w=800&q=80" alt="Mango Fruit Tea"><div class="card-body"><h3>Mango Fruit Tea</h3><p>₱125<br>Refreshing mango-infused tea</p><a class="hero-btn" target="_blank" href="https://forms.gle/3Dorderform">Order Now</a></div></div>
+  </div>
 
-    <h3>Cream Cheese Series</h3>
-    <div class="menu-container">
-      <div class="card"><img src="https://source.unsplash.com/featured/?oreotea" alt="Oreo Cream Cheese"><div class="card-body"><h3>Oreo Cream Cheese</h3><p>₱150<br>Oreo milk tea topped with cream cheese</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform">Order Now</a></div></div>
-    </div>
+  <h3>Cream Cheese Series</h3>
+  <div class="menu-container">
+    <div class="card"><img src="https://images.unsplash.com/photo-1618992136449-1ec2d71d3f2a?auto=format&fit=crop&w=800&q=80" alt="Oreo Cream Cheese"><div class="card-body"><h3>Oreo Cream Cheese</h3><p>₱150<br>Oreo milk tea topped with cream cheese</p><a class="hero-btn" target="_blank" href="https://forms.gle/3Dorderform">Order Now</a></div></div>
+  </div>
 
-    <h3>Snacks</h3>
-    <div class="menu-container">
-      <div class="card"><img src="https://source.unsplash.com/featured/?takoyaki" alt="Classic Takoyaki"><div class="card-body"><h3>Classic Takoyaki (4 pcs)</h3><p>₱90<br>Octopus-filled Japanese snack</p><a class="hero-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScB-BXMKasuGBCxnPBxtHyqyqqCjnBHI2S7baXR7pRePnGkxg/viewform">Order Now</a></div></div>
-    </div>
-  </section>
+  <h3>Snacks</h3>
+  <div class="menu-container">
+    <div class="card"><img src="https://images.unsplash.com/photo-1628887647946-c0f3bfb0f410?auto=format&fit=crop&w=800&q=80" alt="Classic Takoyaki"><div class="card-body"><h3>Classic Takoyaki (4 pcs)</h3><p>₱90<br>Octopus-filled Japanese snack</p><a class="hero-btn" target="_blank" href="https://forms.gle/3Dorderform">Order Now</a></div></div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 Sai's Milk Tea. All rights reserved. | Follow us @saismktea
-  </footer>
+<footer>
+  &copy; 2025 Sai's Milk Tea. All rights reserved. | Follow us @saismktea
+</footer>
 
 </body>
 </html>
